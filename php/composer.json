@@ -1,0 +1,20 @@
+{
+    "name": "gquemener/snapshotter-issue",
+    "authors": [
+        {
+            "name": "Gildas Quéméner",
+            "email": "gildas.quemener@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/App"
+        }
+    },
+    "require": {
+        "prooph/pdo-event-store": "^1.5",
+        "prooph/event-sourcing": "^5.2",
+        "prooph/pdo-snapshot-store": "^1.3",
+        "prooph/snapshotter": "^2.0"
+    }
+}

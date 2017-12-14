@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+    php:
+        build: ./php/.
+        volumes:
+            - "./php:/data"
+        depends_on:
+            - pgsql
+
+    pgsql:
+        build: ./pgsql/.
+        env_file: ./pgsql/.env
